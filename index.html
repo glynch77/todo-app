@@ -23,17 +23,54 @@
       <div class="card w-75 mb-3">
         <div class="card-body">
           <h5 class="card-title">TODO APP</h5>
-          <p class="card-text">
-            With supporting text below as a natural lead-in to additional
-            content.
-          </p>
-          <button
-            type="button"
-            data-bs-toggle="modal"
-            data-bs-target="#myModal"
-          >
-            add task
-          </button>
+          <ul class="list-group">
+            <li class="list-group-item border-0">
+              <input
+                class="form-check-input me-1"
+                type="checkbox"
+                value=""
+                id="firstCheckbox"
+              />
+              <label class="form-check-label" for="firstCheckbox"
+                >Buy milk</label
+              >
+            </li>
+            <li class="list-group-item border-0">
+              <input
+                class="form-check-input me-1"
+                type="checkbox"
+                value=""
+                id="secondCheckbox"
+              />
+              <label class="form-check-label" for="secondCheckbox"
+                >Stretch Appointment</label
+              >
+            </li>
+            <li class="list-group-item border-0">
+              <input
+                class="form-check-input me-1"
+                type="checkbox"
+                value=""
+                id="thirdCheckbox"
+              />
+              <label class="form-check-label" for="thirdCheckbox"
+                >Lunch With Friends</label
+              >
+            </li>
+          </ul>
+          <div class="d-flex gap-2 justify-content-center mt-3">
+            <!-- Button One: Add Task -->
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#myModal"
+            >
+              Add task
+            </button>
+            <!-- Button Two: Delete Task -->
+            <button type="button" class="btn btn-secondary">Delete Task</button>
+          </div>
         </div>
       </div>
     </div>
