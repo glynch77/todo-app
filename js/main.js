@@ -29,6 +29,11 @@ function renderTasks() {
         checkbox.type = "checkbox";
         checkbox.className = "form-check-input me-3";
         checkbox.checked = task.completed;
+        
+        checkbox.addEventListener("change", function() {
+            task.completed = checkbox.checked;
+        });
+        
 
         const label = document.createElement("span");
         label.textContent = task.title;
@@ -39,3 +44,13 @@ function renderTasks() {
         taskList.appendChild(li);
     });
 }
+
+
+const deleteButton = document.getElementById("delete-task-button");
+
+deleteButton.addEventListener("click", function() {
+    tasks = tasks.filter(function(task) {
+        return task.completed === false;
+    });
+    renderTasks();
+});
